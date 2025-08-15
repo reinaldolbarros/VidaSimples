@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|c:\\users\\reina\\onedrive\\ti\\vidasimples\\vidasimples\\vidasimples\\contaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|solutionrelative:vidasimples\\contaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|c:\\users\\reina\\onedrive\\ti\\vidasimples\\vidasimples\\vidasimples\\contaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|solutionrelative:vidasimples\\contaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|c:\\users\\reina\\onedrive\\ti\\vidasimples\\vidasimples\\vidasimples\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|solutionrelative:vidasimples\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|c:\\users\\reina\\onedrive\\ti\\vidasimples\\vidasimples\\vidasimples\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|solutionrelative:vidasimples\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|c:\\users\\reina\\onedrive\\ti\\vidasimples\\vidasimples\\vidasimples\\controlefinanceiropage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|solutionrelative:vidasimples\\controlefinanceiropage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|c:\\users\\reina\\onedrive\\ti\\vidasimples\\vidasimples\\vidasimples\\controlefinanceiropage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|solutionrelative:vidasimples\\controlefinanceiropage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|c:\\users\\reina\\onedrive\\ti\\vidasimples\\vidasimples\\vidasimples\\contaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|solutionrelative:vidasimples\\contaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|c:\\users\\reina\\onedrive\\ti\\vidasimples\\vidasimples\\vidasimples\\contaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|solutionrelative:vidasimples\\contaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{327FBABF-A08D-4A52-A463-AA8B0ACD1758}|VidaSimples\\VidaSimples.csproj|c:\\users\\reina\\onedrive\\ti\\vidasimples\\vidasimples\\vidasimples\\agendapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,7 +73,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -77,85 +85,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "ControleFinanceiroPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ControleFinanceiroPage.xaml.cs",
+              "RelativeDocumentMoniker": "VidaSimples\\ControleFinanceiroPage.xaml.cs",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ControleFinanceiroPage.xaml.cs",
+              "RelativeToolTip": "VidaSimples\\ControleFinanceiroPage.xaml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAtwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T20:40:23.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ControleFinanceiroPage.xaml",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ControleFinanceiroPage.xaml",
+              "RelativeDocumentMoniker": "VidaSimples\\ControleFinanceiroPage.xaml",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ControleFinanceiroPage.xaml",
+              "RelativeToolTip": "VidaSimples\\ControleFinanceiroPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwBkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-15T20:39:46.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ContasPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ContasPage.xaml.cs",
               "RelativeDocumentMoniker": "VidaSimples\\ContasPage.xaml.cs",
               "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ContasPage.xaml.cs",
               "RelativeToolTip": "VidaSimples\\ContasPage.xaml.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-15T19:38:18.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ConfigPage.xaml",
-              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ConfigPage.xaml",
-              "RelativeDocumentMoniker": "VidaSimples\\ConfigPage.xaml",
-              "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ConfigPage.xaml",
-              "RelativeToolTip": "VidaSimples\\ConfigPage.xaml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAmwDQAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-15T18:48:28.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AssistentePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\AssistentePage.xaml.cs",
-              "RelativeDocumentMoniker": "VidaSimples\\AssistentePage.xaml.cs",
-              "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\AssistentePage.xaml.cs",
-              "RelativeToolTip": "VidaSimples\\AssistentePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T18:45:05.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AssistentePage.xaml",
-              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\AssistentePage.xaml",
-              "RelativeDocumentMoniker": "VidaSimples\\AssistentePage.xaml",
-              "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\AssistentePage.xaml",
-              "RelativeToolTip": "VidaSimples\\AssistentePage.xaml",
-              "ViewState": "AgIAABMAAAAAAAAAAAAmwCwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-15T18:44:32.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dashboard.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\Dashboard.xaml.cs",
-              "RelativeDocumentMoniker": "VidaSimples\\Dashboard.xaml.cs",
-              "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\Dashboard.xaml.cs",
-              "RelativeToolTip": "VidaSimples\\Dashboard.xaml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAIwBwAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T10:04:08.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Dashboard.xaml",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\Dashboard.xaml",
               "RelativeDocumentMoniker": "VidaSimples\\Dashboard.xaml",
               "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\Dashboard.xaml",
               "RelativeToolTip": "VidaSimples\\Dashboard.xaml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAmwEUAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEgAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-15T10:00:49.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ContasPage.xaml",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ContasPage.xaml",
               "RelativeDocumentMoniker": "VidaSimples\\ContasPage.xaml",
@@ -168,7 +150,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "Dashboard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\Dashboard.xaml.cs",
+              "RelativeDocumentMoniker": "VidaSimples\\Dashboard.xaml.cs",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\Dashboard.xaml.cs",
+              "RelativeToolTip": "VidaSimples\\Dashboard.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAwwDMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T10:04:08.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AssistentePage.xaml",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\AssistentePage.xaml",
+              "RelativeDocumentMoniker": "VidaSimples\\AssistentePage.xaml",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\AssistentePage.xaml",
+              "RelativeToolTip": "VidaSimples\\AssistentePage.xaml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAmwCwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-15T18:44:32.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AssistentePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\AssistentePage.xaml.cs",
+              "RelativeDocumentMoniker": "VidaSimples\\AssistentePage.xaml.cs",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\AssistentePage.xaml.cs",
+              "RelativeToolTip": "VidaSimples\\AssistentePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T18:45:05.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConfigPage.xaml",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ConfigPage.xaml",
+              "RelativeDocumentMoniker": "VidaSimples\\ConfigPage.xaml",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ConfigPage.xaml",
+              "RelativeToolTip": "VidaSimples\\ConfigPage.xaml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwDQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-15T18:48:28.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ConfigPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\ConfigPage.xaml.cs",
               "RelativeDocumentMoniker": "VidaSimples\\ConfigPage.xaml.cs",
@@ -181,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AgendaPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\AgendaPage.xaml.cs",
               "RelativeDocumentMoniker": "VidaSimples\\AgendaPage.xaml.cs",
@@ -194,33 +228,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "AgendaPage.xaml",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\AgendaPage.xaml",
               "RelativeDocumentMoniker": "VidaSimples\\AgendaPage.xaml",
               "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\AgendaPage.xaml",
               "RelativeToolTip": "VidaSimples\\AgendaPage.xaml",
-              "ViewState": "AgIAAAYAAAAAAAAAAIBZwC0AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAACBjwC0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-15T18:38:37.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\MainPage.xaml",
               "RelativeDocumentMoniker": "VidaSimples\\MainPage.xaml",
               "ToolTip": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\MainPage.xaml",
               "RelativeToolTip": "VidaSimples\\MainPage.xaml",
-              "ViewState": "AgIAACAAAAAAAAAAAIBZwCYAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAACBjwCYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-15T10:03:03.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\App.xaml",
               "RelativeDocumentMoniker": "VidaSimples\\App.xaml",
@@ -233,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Microsoft.Maui.Controls.targets",
               "DocumentMoniker": "C:\\Users\\reina\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.61\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.61\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
@@ -244,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "VidaSimples\\MainPage.xaml.cs",

@@ -59,18 +59,20 @@
 
         <!-- Menu inferior de navegação -->
         <Grid Grid.Row="1" BackgroundColor="White" HeightRequest="62" Padding="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Button Text="Dashboard" Clicked="OnDashboardClicked" TextColor="#009688" BackgroundColor="Transparent" FontAttributes="Bold" Grid.Column="0"/>
-            <Button Text="Contas" Clicked="OnContasClicked" TextColor="Gray" BackgroundColor="Transparent" Grid.Column="1"/>
-            <Button Text="Agenda" Clicked="OnAgendaClicked" TextColor="Gray" BackgroundColor="Transparent" Grid.Column="2"/>
-            <Button Text="Assistente" Clicked="OnAssistenteClicked" TextColor="Gray" BackgroundColor="Transparent" Grid.Column="3"/>
-            <Button Text="Configurações" Clicked="OnConfigClicked" TextColor="Gray" BackgroundColor="Transparent" Grid.Column="4"/>
-        </Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Button Text="Dashboard" Clicked="OnDashboardClicked" Grid.Column="0"/>
+    <Button Text="Contas" Clicked="OnContasClicked" Grid.Column="1"/>
+    <Button Text="Agenda" Clicked="OnAgendaClicked" Grid.Column="2"/>
+    <Button Text="Assistente" Clicked="OnAssistenteClicked" Grid.Column="3"/>
+    <Button Text="Configurações" Clicked="OnConfigClicked" Grid.Column="4"/>
+    <Button Text="Controle Financeiro" Clicked="OnControleFinanceiroClicked" Grid.Column="5"/>
+</Grid>
     </Grid>
 </ContentPage>

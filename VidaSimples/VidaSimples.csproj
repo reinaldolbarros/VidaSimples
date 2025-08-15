@@ -78,6 +78,9 @@
 	  <MauiXaml Update="ContasPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ControleFinanceiroPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -95,6 +98,9 @@
 	  </Compile>
 	  <Compile Update="ContasPage.xaml.cs">
 	    <DependentUpon>ContasPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ControleFinanceiroPage.xaml.cs">
+	    <DependentUpon>ControleFinanceiroPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 

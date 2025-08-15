@@ -46,5 +46,11 @@ namespace VidaSimples
             DisplayAlert("Configurações", "Ir para a tela de Configurações.", "OK");
             await Navigation.PushAsync(new ConfigPage());
         }
+
+        private async void OnControleFinanceiroClicked(object sender, EventArgs e)
+        {
+            
+            await Navigation.PushAsync(new ControleFinanceiroPage());
+        }
     }
 }

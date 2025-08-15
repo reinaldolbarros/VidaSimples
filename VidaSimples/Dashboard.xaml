@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VidaSimples.Dashboard"
+    Title="Dashboard"
+    BackgroundColor="#F3F3F3">
+
+    <Grid RowDefinitions="*,Auto">
+
+        <!-- Conteúdo principal -->
+        <ScrollView>
+            <VerticalStackLayout Padding="24,24,24,0" Spacing="22">
+
+                <!-- Resumo do Dia -->
+                <Label Text="Resumo do Dia" FontSize="26" FontAttributes="Bold" TextColor="#009688"/>
+
+                <!-- Contas a vencer -->
+                <Frame BackgroundColor="White" CornerRadius="16" Padding="12" HasShadow="True">
+                    <VerticalStackLayout>
+                        <Label Text="Contas a Vencer" FontSize="19" FontAttributes="Bold" TextColor="#333"/>
+                        <Label Text="• Luz - R$ 120,00 - vence hoje" FontSize="16"/>
+                        <Label Text="• Internet - R$ 80,00 - vence amanhã" FontSize="16"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Compromissos próximos -->
+                <Frame BackgroundColor="White" CornerRadius="16" Padding="12" HasShadow="True">
+                    <VerticalStackLayout>
+                        <Label Text="Compromissos Próximos" FontSize="19" FontAttributes="Bold" TextColor="#333"/>
+                        <Label Text="• Reunião com João - 14h" FontSize="16"/>
+                        <Label Text="• Dentista - amanhã, 09h" FontSize="16"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Sugestão de prioridades -->
+                <Frame BackgroundColor="#E0F7FA" CornerRadius="16" Padding="12" HasShadow="False">
+                    <Label Text="Sugestão de Prioridade: Pague a conta de luz e confirme dentista."
+                           FontSize="17"
+                           TextColor="#00796B"/>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Botão flutuante para adicionar -->
+        <Button 
+            Text="+" 
+            FontSize="36" 
+            WidthRequest="65" 
+            HeightRequest="65"
+            BackgroundColor="#009688"
+            TextColor="White"
+            CornerRadius="32"
+            VerticalOptions="End"
+            HorizontalOptions="End"
+            Margin="0,0,22,90"
+            Clicked="OnAddClicked"
+            Grid.Row="0"/>
+
+        <!-- Menu inferior de navegação -->
+        <Grid Grid.Row="1" BackgroundColor="White" HeightRequest="62" Padding="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Dashboard" Clicked="OnDashboardClicked" TextColor="#009688" BackgroundColor="Transparent" FontAttributes="Bold" Grid.Column="0"/>
+            <Button Text="Contas" Clicked="OnContasClicked" TextColor="Gray" BackgroundColor="Transparent" Grid.Column="1"/>
+            <Button Text="Agenda" Clicked="OnAgendaClicked" TextColor="Gray" BackgroundColor="Transparent" Grid.Column="2"/>
+            <Button Text="Assistente" Clicked="OnAssistenteClicked" TextColor="Gray" BackgroundColor="Transparent" Grid.Column="3"/>
+            <Button Text="Configurações" Clicked="OnConfigClicked" TextColor="Gray" BackgroundColor="Transparent" Grid.Column="4"/>
+        </Grid>
+    </Grid>
+</ContentPage>

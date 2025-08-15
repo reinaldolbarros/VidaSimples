@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VidaSimples.ContasPage"
+    Title="Contas">
+
+    <VerticalStackLayout Padding="24" Spacing="16">
+        <Label Text="Minhas Contas" FontSize="26" FontAttributes="Bold" HorizontalOptions="Center"/>
+        <CollectionView x:Name="ContasCollectionView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="12" Margin="4" CornerRadius="12" BackgroundColor="#F5F5F5">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Nome}" FontSize="18" FontAttributes="Bold"/>
+                            <Label Text="{Binding Valor, StringFormat='Valor: {0:C}'}" FontSize="16"/>
+                            <Label Text="{Binding Vencimento, StringFormat='Vence em: {0:dd/MM/yyyy}'}" FontSize="15"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="Adicionar Conta" Clicked="OnAdicionarContaClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

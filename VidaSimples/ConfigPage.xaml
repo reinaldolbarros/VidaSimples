@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VidaSimples.ConfigPage"
+    Title="Configurações"
+    BackgroundColor="#F8F9FA">
+
+    <VerticalStackLayout Padding="22" Spacing="20">
+
+        <!-- Perfil do usuário -->
+        <Frame BackgroundColor="#E3F2FD" Padding="14" CornerRadius="12">
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Perfil do Usuário" FontSize="18" FontAttributes="Bold" TextColor="#1565C0"/>
+                <Entry x:Name="NomeEntry" Placeholder="Nome" Text="{Binding Nome}" FontSize="16"/>
+                <Entry x:Name="EmailEntry" Placeholder="E-mail" Text="{Binding Email}" FontSize="16" Keyboard="Email"/>
+                <Button Text="Salvar Perfil" Clicked="OnSalvarPerfilClicked" BackgroundColor="#1565C0" TextColor="White" CornerRadius="8"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Backup/Restauração -->
+        <Frame BackgroundColor="#E8F5E9" Padding="14" CornerRadius="12">
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Backup e Restauração" FontSize="17" FontAttributes="Bold" TextColor="#2E7D32"/>
+                <Button Text="Fazer Backup" Clicked="OnBackupClicked" BackgroundColor="#388E3C" TextColor="White" CornerRadius="8"/>
+                <Button Text="Restaurar Dados" Clicked="OnRestaurarClicked" BackgroundColor="#81C784" TextColor="#222" CornerRadius="8"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Preferências de notificações -->
+        <Frame BackgroundColor="#FFFDE7" Padding="14" CornerRadius="12">
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Notificações" FontSize="17" FontAttributes="Bold" TextColor="#F9A825"/>
+                <Switch x:Name="NotificacoesSwitch" IsToggled="{Binding NotificacoesAtivas}" />
+                <Label Text="Ativar/desativar notificações." FontSize="14" TextColor="#333"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Tema claro/escuro -->
+        <Frame BackgroundColor="#ECEFF1" Padding="14" CornerRadius="12">
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Tema" FontSize="17" FontAttributes="Bold" TextColor="#263238"/>
+                <Picker x:Name="TemaPicker" Title="Escolha o tema" SelectedIndexChanged="OnTemaChanged">
+                    <Picker.Items>
+                        <x:String>Claro</x:String>
+                        <x:String>Escuro</x:String>
+                        <x:String>Sistema</x:String>
+                    </Picker.Items>
+                </Picker>
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

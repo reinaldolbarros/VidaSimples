@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VidaSimples.AssistentePage"
+    Title="Assistente Virtual"
+    BackgroundColor="#F8F9FA">
+
+    <VerticalStackLayout Padding="18" Spacing="16">
+        <!-- Resumo do dia/mês -->
+        <Frame BackgroundColor="#E3F2FD" CornerRadius="12" Padding="10" HasShadow="False">
+            <Label x:Name="ResumoLabel" Text="Resumo do mês: 3 contas pagas, 2 compromissos realizados" FontSize="16" TextColor="#1565C0"/>
+        </Frame>
+
+        <!-- Alertas proativos -->
+        <Frame BackgroundColor="#FFF3E0" CornerRadius="12" Padding="10" HasShadow="False">
+            <StackLayout>
+                <Label Text="Alertas:" FontSize="15" FontAttributes="Bold" TextColor="#E65100"/>
+                <Label x:Name="AlertasLabel" Text="Conta de água vence amanhã!" FontSize="14" TextColor="#E65100"/>
+            </StackLayout>
+        </Frame>
+
+        <!-- Sugestões de prioridades -->
+        <Frame BackgroundColor="#E0F7FA" CornerRadius="12" Padding="10" HasShadow="False">
+            <Label x:Name="SugestoesLabel" Text="Prioridade: Confirmar consulta médica e pagar conta de luz." FontSize="15" TextColor="#00897B"/>
+        </Frame>
+
+        <!-- Chatbot -->
+        <Label Text="Assistente Virtual" FontSize="18" FontAttributes="Bold" Margin="0,12,0,0"/>
+        <CollectionView x:Name="ChatCollectionView" HeightRequest="180">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BackgroundColor="#FFFFFF" Padding="8" Margin="0,2" CornerRadius="8">
+                        <Label Text="{Binding Mensagem}" FontSize="14" TextColor="#333"/>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <HorizontalStackLayout Spacing="8">
+            <Entry x:Name="ChatEntry" Placeholder="Digite sua pergunta ou comando..." HorizontalOptions="FillAndExpand"/>
+            <Button Text="Enviar" Clicked="OnEnviarClicked" BackgroundColor="#1565C0" TextColor="White" CornerRadius="8"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

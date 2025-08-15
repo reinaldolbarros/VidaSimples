@@ -1,0 +1,77 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = VidaSimples
+build_property.ProjectDir = C:\Users\reina\OneDrive\TI\VidaSimples\VidaSimples\VidaSimples\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/reina/OneDrive/TI/VidaSimples/VidaSimples/VidaSimples/AgendaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.AgendaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AgendaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AgendaPage.xaml
+
+[C:/Users/reina/OneDrive/TI/VidaSimples/VidaSimples/VidaSimples/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/reina/OneDrive/TI/VidaSimples/VidaSimples/VidaSimples/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/reina/OneDrive/TI/VidaSimples/VidaSimples/VidaSimples/AssistentePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.AssistentePage.xaml
+build_metadata.AdditionalFiles.TargetPath = AssistentePage.xaml
+build_metadata.AdditionalFiles.RelativePath = AssistentePage.xaml
+
+[C:/Users/reina/OneDrive/TI/VidaSimples/VidaSimples/VidaSimples/ConfigPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.ConfigPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ConfigPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ConfigPage.xaml
+
+[C:/Users/reina/OneDrive/TI/VidaSimples/VidaSimples/VidaSimples/ContasPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.ContasPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ContasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ContasPage.xaml
+
+[C:/Users/reina/OneDrive/TI/VidaSimples/VidaSimples/VidaSimples/Dashboard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.Dashboard.xaml
+build_metadata.AdditionalFiles.TargetPath = Dashboard.xaml
+build_metadata.AdditionalFiles.RelativePath = Dashboard.xaml
+
+[C:/Users/reina/OneDrive/TI/VidaSimples/VidaSimples/VidaSimples/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/reina/OneDrive/TI/VidaSimples/VidaSimples/VidaSimples/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/reina/OneDrive/TI/VidaSimples/VidaSimples/VidaSimples/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

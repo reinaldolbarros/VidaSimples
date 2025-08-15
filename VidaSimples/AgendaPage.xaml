@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VidaSimples.AgendaPage"
+    Title="Agenda">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Visualização do calendário (Mensal/Semanal simplificado) -->
+        <Picker x:Name="ModoPicker" Title="Visualizar" SelectedIndexChanged="OnModoChanged">
+            <Picker.Items>
+                <x:String>Mensal</x:String>
+                <x:String>Semanal</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <!-- Calendário simplificado -->
+        <HorizontalStackLayout Spacing="8">
+            <Button Text="◀" WidthRequest="38" Clicked="OnPrevClicked"/>
+            <Label x:Name="PeriodoLabel" FontSize="18" FontAttributes="Bold" VerticalOptions="Center"/>
+            <Button Text="▶" WidthRequest="38" Clicked="OnNextClicked"/>
+        </HorizontalStackLayout>
+
+        <!-- Lista de compromissos do dia -->
+        <Label Text="Compromissos do Dia" FontSize="20" FontAttributes="Bold" Margin="0,10,0,0"/>
+        <CollectionView x:Name="CompromissosCollectionView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BackgroundColor="#FFFFFF" Padding="10" CornerRadius="12" Margin="0,4">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Titulo}" FontSize="17" FontAttributes="Bold" TextColor="#00796B"/>
+                            <Label Text="{Binding Horario, StringFormat='Horário: {0:HH:mm}'}" FontSize="15" TextColor="#333"/>
+                            <Label Text="{Binding Descricao}" FontSize="13" TextColor="#666"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Sugestão de horários livres -->
+        <Frame BackgroundColor="#E0F7FA" CornerRadius="12" Padding="10">
+            <Label x:Name="SugestaoLabel" Text="Você tem horários livres às 09:00, 15:00 e 18:00" FontSize="15" TextColor="#009688"/>
+        </Frame>
+
+        <!-- Botão Adicionar Compromisso -->
+        <Button 
+            Text="+ Adicionar Compromisso"
+            FontSize="19"
+            BackgroundColor="#009688"
+            TextColor="White"
+            CornerRadius="18"
+            HeightRequest="48"
+            Clicked="OnAdicionarCompromissoClicked"
+            Margin="0,18,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>

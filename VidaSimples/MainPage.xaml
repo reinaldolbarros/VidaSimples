@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VidaSimples.MainPage"
+    BackgroundColor="#F5F5F5"
+    Title="Login">
+
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+        <!-- Logo ou nome do app -->
+        <Label Text="VidaSimples"
+               FontAttributes="Bold"
+               FontSize="32"
+               HorizontalOptions="Center"
+               TextColor="#009688" />
+
+        <!-- Campo Email -->
+        <Entry x:Name="EmailEntry"
+               Placeholder="E-mail"
+               Keyboard="Email"
+               TextColor="Black"
+               BackgroundColor="White"
+               HeightRequest="50"
+               Margin="0,10" />
+
+        <!-- Campo Senha -->
+        <Entry x:Name="PasswordEntry"
+               Placeholder="Senha"
+               IsPassword="True"
+               TextColor="Black"
+               BackgroundColor="White"
+               HeightRequest="50"
+               Margin="0,10" />
+
+        <!-- Botão Login -->
+        <Button Text="Entrar"
+                BackgroundColor="#009688"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="8"
+                HeightRequest="50"
+                Clicked="OnLoginClicked" />
+
+        <!-- Link para cadastro -->
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label Text="Não tem conta?" TextColor="Gray" />
+            <Button Text="Cadastre-se"
+                    BackgroundColor="Transparent"
+                    TextColor="#009688"
+                    Clicked="OnRegisterClicked"
+                    Padding="0"
+                    FontAttributes="Bold" />
+        </HorizontalStackLayout>
+
+        <!-- Link para recuperação de senha -->
+        <Button Text="Esqueci minha senha"
+                BackgroundColor="Transparent"
+                TextColor="#009688"
+                Clicked="OnForgotPasswordClicked"
+                Padding="0"
+                FontAttributes="None" />
+    </VerticalStackLayout>
+</ContentPage>

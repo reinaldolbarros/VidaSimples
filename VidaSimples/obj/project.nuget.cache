@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HtJWSAG06iA=",
+  "dgSpecHash": "9v3R639P0oI=",
   "success": true,
   "projectFilePath": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\VidaSimples.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,10 @@
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.arch.core.common\\2.2.0.3\\xamarin.androidx.arch.core.common.2.2.0.3.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.arch.core.runtime\\2.2.0.3\\xamarin.androidx.arch.core.runtime.2.2.0.3.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.browser\\1.5.0.3\\xamarin.androidx.browser.1.5.0.3.nupkg.sha512",
+    "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.camera.camera2\\1.1.0\\xamarin.androidx.camera.camera2.1.1.0.nupkg.sha512",
+    "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.camera.core\\1.1.0\\xamarin.androidx.camera.core.1.1.0.nupkg.sha512",
+    "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.camera.lifecycle\\1.1.0\\xamarin.androidx.camera.lifecycle.1.1.0.nupkg.sha512",
+    "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.camera.view\\1.1.0\\xamarin.androidx.camera.view.1.1.0.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.cardview\\1.0.0.21\\xamarin.androidx.cardview.1.0.0.21.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.collection\\1.2.0.9\\xamarin.androidx.collection.1.2.0.9.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.collection.ktx\\1.2.0.9\\xamarin.androidx.collection.ktx.1.2.0.9.nupkg.sha512",
@@ -101,6 +105,7 @@
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.window\\1.1.0.1\\xamarin.androidx.window.1.1.0.1.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.androidx.window.extensions.core.core\\1.0.0.1\\xamarin.androidx.window.extensions.core.core.1.0.0.1.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.google.android.material\\1.9.0.2\\xamarin.google.android.material.1.9.0.2.nupkg.sha512",
+    "C:\\Users\\reina\\.nuget\\packages\\xamarin.google.autovalue.annotations\\1.9.0.2\\xamarin.google.autovalue.annotations.1.9.0.2.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.google.code.findbugs.jsr305\\3.0.2.9\\xamarin.google.code.findbugs.jsr305.3.0.2.9.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.google.crypto.tink.android\\1.10.0\\xamarin.google.crypto.tink.android.1.10.0.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.google.errorprone.annotations\\2.20.0.1\\xamarin.google.errorprone.annotations.2.20.0.1.nupkg.sha512",
@@ -112,6 +117,8 @@
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.9.0.1\\xamarin.kotlin.stdlib.jdk8.1.9.0.1.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.7.2.1\\xamarin.kotlinx.coroutines.android.1.7.2.1.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.7.2.1\\xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512",
+    "C:\\Users\\reina\\.nuget\\packages\\zxing.net\\0.16.9\\zxing.net.0.16.9.nupkg.sha512",
+    "C:\\Users\\reina\\.nuget\\packages\\zxing.net.maui\\0.4.0\\zxing.net.maui.0.4.0.nupkg.sha512",
     "C:\\Users\\reina\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.44\\microsoft.windows.sdk.net.ref.10.0.19041.44.nupkg.sha512"
   ],
   "logs": []

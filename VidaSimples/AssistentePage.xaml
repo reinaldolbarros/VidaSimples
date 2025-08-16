@@ -6,6 +6,7 @@
     Title="Assistente Virtual"
     BackgroundColor="#F8F9FA">
 
+    <ScrollView>
     <VerticalStackLayout Padding="18" Spacing="16">
         <!-- Resumo do dia/mês -->
         <Frame BackgroundColor="#E3F2FD" CornerRadius="12" Padding="10" HasShadow="False">
@@ -42,4 +43,5 @@
             <Button Text="Enviar" Clicked="OnEnviarClicked" BackgroundColor="#1565C0" TextColor="White" CornerRadius="8"/>
         </HorizontalStackLayout>
     </VerticalStackLayout>
+        </ScrollView>
 </ContentPage>

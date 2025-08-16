@@ -5,6 +5,7 @@
     x:Class="VidaSimples.ContasPage"
     Title="Contas">
 
+    <ScrollView>
     <VerticalStackLayout Padding="24" Spacing="16">
         <Label Text="Minhas Contas" FontSize="26" FontAttributes="Bold" HorizontalOptions="Center"/>
         <CollectionView x:Name="ContasCollectionView">
@@ -22,4 +23,5 @@
         </CollectionView>
         <Button Text="Adicionar Conta" Clicked="OnAdicionarContaClicked"/>
     </VerticalStackLayout>
+        </ScrollView>
 </ContentPage>

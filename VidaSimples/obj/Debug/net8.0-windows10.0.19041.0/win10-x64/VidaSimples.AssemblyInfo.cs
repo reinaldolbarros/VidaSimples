@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VidaSimples")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2c76e2b0e518c44698b6797c850bf0b98ab65458")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3fe89d8411e96bdad3ecbd52750980163a89b229")]
 [assembly: System.Reflection.AssemblyProductAttribute("VidaSimples")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VidaSimples")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="VidaSimples.InserirManualPage"
+    Title="Inserir Manualmente">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+            <Label Text="Preencha os dados do boleto" FontSize="18"/>
+            <Entry x:Name="txtLinhaDigitavel" Placeholder="Linha Digitável ou Código de Barras" Keyboard="Numeric"/>
+            <Entry x:Name="txtValor" Placeholder="Valor" Keyboard="Numeric"/>
+            <Entry x:Name="txtNome" Placeholder="Nome da Conta"/>
+            <DatePicker x:Name="dateVencimento" />
+            <Button Text="Salvar" Clicked="OnSalvarManualClicked" BackgroundColor="#FF9800" TextColor="White"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

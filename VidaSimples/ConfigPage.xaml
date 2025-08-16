@@ -6,6 +6,7 @@
     Title="Configurações"
     BackgroundColor="#F8F9FA">
 
+    <ScrollView>
     <VerticalStackLayout Padding="22" Spacing="20">
 
         <!-- Perfil do usuário -->
@@ -50,4 +51,5 @@
             </VerticalStackLayout>
         </Frame>
     </VerticalStackLayout>
+        </ScrollView>
 </ContentPage>

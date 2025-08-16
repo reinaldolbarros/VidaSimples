@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+    x:Class="VidaSimples.GraficoPizzaPage"
+    Title="Gráfico de Pizza">
+
+    <VerticalStackLayout Padding="24" Spacing="16">
+        <Label Text="Distribuição das Categorias e Saldo" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center"/>
+        <syncfusion:SfCircularChart>
+            <syncfusion:SfCircularChart.Series>
+                <syncfusion:PieSeries ItemsSource="{Binding DadosGrafico}"
+                                      XBindingPath="Categoria"
+                                      YBindingPath="Valor"
+                                      ShowDataLabels="True"/>
+            </syncfusion:SfCircularChart.Series>
+        </syncfusion:SfCircularChart>
+    </VerticalStackLayout>
+</ContentPage>

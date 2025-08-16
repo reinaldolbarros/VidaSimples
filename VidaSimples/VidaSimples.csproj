@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst;net8.0-windows10.0.19041.0</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
+		<!--TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>-->
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
 
@@ -57,9 +57,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageReference Include="Microcharts.Maui" Version="1.0.1" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.100" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="Syncfusion.Maui.Charts" Version="30.2.5" />
+		<PackageReference Include="Syncfusion.Pdf.Net.Core" Version="30.2.5" />
 		<PackageReference Include="ZXing.Net.Maui" Version="0.4.0" />
 	</ItemGroup>
 
@@ -88,6 +91,9 @@
 	  <MauiXaml Update="InserirManualPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="GraficoPizzaPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -114,6 +120,9 @@
 	  </Compile>
 	  <Compile Update="InserirManualPage.xaml.cs">
 	    <DependentUpon>InserirManualPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="GraficoPizzaPage.xaml.cs">
+	    <DependentUpon>GraficoPizzaPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 

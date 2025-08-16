@@ -1,11 +1,18 @@
 GoogleGson.dll
 Jsr305Binding.dll
+Microcharts.Maui.dll
 Microsoft.Maui.Controls.Compatibility.dll
 Microsoft.Maui.Controls.dll
 Microsoft.Maui.Controls.Xaml.dll
 Microsoft.Maui.dll
 Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
+SkiaSharp.dll
+SkiaSharp.Views.Android.dll
+SkiaSharp.Views.Maui.Controls.dll
+SkiaSharp.Views.Maui.Core.dll
+Syncfusion.Maui.Charts.dll
+Syncfusion.Maui.Core.dll
 Xamarin.Android.Glide.Annotations.dll
 Xamarin.Android.Glide.DiskLruCache.dll
 Xamarin.Android.Glide.dll
@@ -166,6 +173,7 @@ Microsoft.Maui.Controls.aar
 maui.aar
 Microsoft.Maui.aar
 Microsoft.Maui.Essentials.aar
+SkiaSharp.Views.Android.aar
 Xamarin.Google.AutoValue.Annotations.aar
 Xamarin.Google.Crypto.Tink.Android.aar
 Xamarin.Google.ErrorProne.Annotations.aar

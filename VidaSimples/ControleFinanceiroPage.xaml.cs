@@ -8,6 +8,8 @@ namespace VidaSimples
 {
     public partial class ControleFinanceiroPage : ContentPage
     {
+        public ControleFinanceiroViewModel ViewModel => BindingContext as ControleFinanceiroViewModel;
+
         public ControleFinanceiroPage()
         {
             InitializeComponent();
@@ -16,14 +18,16 @@ namespace VidaSimples
 
         private async void OnAdicionarLancamentoClicked(object sender, EventArgs e)
         {
-            var vm = BindingContext as ControleFinanceiroViewModel;
+            var vm = ViewModel;
             string tipo = await DisplayActionSheet("Tipo", "Cancelar", null, "Entrada", "Saída");
             if (tipo == "Cancelar" || string.IsNullOrEmpty(tipo)) return;
 
             string valorStr = await DisplayPromptAsync("Valor", "Informe o valor:");
             if (!decimal.TryParse(valorStr, out decimal valor)) return;
 
-            string categoria = await DisplayPromptAsync("Categoria", "Informe a categoria:");
+            string categoria = await DisplayActionSheet("Categoria", "Cancelar", null, vm.Categorias.ToArray());
+            if (categoria == "Cancelar" || string.IsNullOrEmpty(categoria)) return;
+
             string descricao = await DisplayPromptAsync("Descrição", "Informe uma descrição:");
             string observacao = await DisplayPromptAsync("Observação", "Informe uma observação (opcional):");
 
@@ -38,19 +42,39 @@ namespace VidaSimples
             });
         }
 
+        private async void OnAdicionarCategoriaClicked(object sender, EventArgs e)
+        {
+            var vm = ViewModel;
+            string novaCategoria = NovaCategoriaEntry.Text?.Trim();
+            if (string.IsNullOrEmpty(novaCategoria))
+            {
+                await DisplayAlert("Atenção", "Digite o nome da nova categoria.", "OK");
+                return;
+            }
+            if (vm.Categorias.Any(c => string.Equals(c, novaCategoria, StringComparison.OrdinalIgnoreCase)))
+            {
+                await DisplayAlert("Atenção", "Categoria já existente.", "OK");
+                return;
+            }
+            vm.Categorias.Add(novaCategoria);
+            NovaCategoriaEntry.Text = "";
+            await DisplayAlert("Sucesso", $"Categoria '{novaCategoria}' adicionada!", "OK");
+        }
+
         private async void OnExportarDadosClicked(object sender, EventArgs e)
         {
             await DisplayAlert("Exportar", "Funcionalidade de exportação ainda não implementada.", "OK");
         }
 
-        private async void OnAnexarBoletoClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new AnexarBoletoPage());
-        }
+     
 
-        private async void OnInserirManualClicked(object sender, EventArgs e)
+        //aqui
+        private async void OnVisualizarGraficoClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new InserirManualPage());
+            var vm = ViewModel;
+            var somaPorCategoria = vm.GetSomaPorCategoria();
+            var saldo = vm.SaldoAtual;
+            await Navigation.PushAsync(new GraficoPizzaPage(somaPorCategoria, saldo));
         }
     }
 
@@ -70,6 +94,32 @@ namespace VidaSimples
         public ObservableCollection<Lancamento> LancamentosFiltrados { get; set; }
 
         public ObservableCollection<string> Tipos { get; set; } = new ObservableCollection<string> { "Todos", "Entrada", "Saída" };
+
+        public ObservableCollection<string> Categorias { get; set; } = new ObservableCollection<string>
+        {
+            "Alimentação",
+            "Transporte",
+            "Saúde",
+            "Lazer",
+            "Vestuário",
+            "Educação",
+            "Investimentos"
+        };
+        private string categoriaSelecionada;
+        public string CategoriaSelecionada
+        {
+            get => categoriaSelecionada;
+            set
+            {
+                if (categoriaSelecionada != value)
+                {
+                    categoriaSelecionada = value;
+                    FiltrarLancamentos();
+                    OnPropertyChanged(nameof(CategoriaSelecionada));
+                }
+            }
+        }
+
         private string tipoSelecionado = "Todos";
         public string TipoSelecionado
         {
@@ -109,7 +159,7 @@ namespace VidaSimples
             Lancamentos = new ObservableCollection<Lancamento>
             {
                 new Lancamento{ Tipo="Entrada", Valor=1500, Categoria="Salário", Descricao="Salário mensal", Observacao="Agosto", Data=DateTime.Now.AddDays(-10)},
-                new Lancamento{ Tipo="Saída", Valor=250, Categoria="Mercado", Descricao="Compras mercado", Observacao="Supermercado X", Data=DateTime.Now.AddDays(-8)},
+                new Lancamento{ Tipo="Saída", Valor=250, Categoria="Alimentação", Descricao="Compras mercado", Observacao="Supermercado X", Data=DateTime.Now.AddDays(-8)},
                 new Lancamento{ Tipo="Saída", Valor=400, Categoria="Aluguel", Descricao="Aluguel", Observacao="Apartamento", Data=DateTime.Now.AddDays(-4)},
                 new Lancamento{ Tipo="Entrada", Valor=200, Categoria="Freelancer", Descricao="Freela", Observacao="", Data=DateTime.Now.AddDays(-2)},
             };
@@ -122,6 +172,7 @@ namespace VidaSimples
         {
             var filtrados = Lancamentos.Where(l =>
                 (TipoSelecionado == "Todos" || l.Tipo == TipoSelecionado) &&
+                (string.IsNullOrEmpty(CategoriaSelecionada) || l.Categoria == CategoriaSelecionada) &&
                 l.Data.Month == DataSelecionada.Month &&
                 l.Data.Year == DataSelecionada.Year);
 
@@ -143,5 +194,15 @@ namespace VidaSimples
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+
+        //aqui
+        public Dictionary<string, decimal> GetSomaPorCategoria()
+        {
+            // Somente Saídas agrupadas por categoria
+            return LancamentosFiltrados
+                .Where(l => l.Tipo == "Saída")
+                .GroupBy(l => l.Categoria)
+                .ToDictionary(grp => grp.Key, grp => grp.Sum(l => l.Valor));
+        }
     }
 }

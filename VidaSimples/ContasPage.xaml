@@ -4,24 +4,41 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="VidaSimples.ContasPage"
     Title="Contas">
-
     <ScrollView>
-    <VerticalStackLayout Padding="24" Spacing="16">
-        <Label Text="Minhas Contas" FontSize="26" FontAttributes="Bold" HorizontalOptions="Center"/>
-        <CollectionView x:Name="ContasCollectionView">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Frame Padding="12" Margin="4" CornerRadius="12" BackgroundColor="#F5F5F5">
-                        <VerticalStackLayout>
-                            <Label Text="{Binding Nome}" FontSize="18" FontAttributes="Bold"/>
-                            <Label Text="{Binding Valor, StringFormat='Valor: {0:C}'}" FontSize="16"/>
-                            <Label Text="{Binding Vencimento, StringFormat='Vence em: {0:dd/MM/yyyy}'}" FontSize="15"/>
-                        </VerticalStackLayout>
-                    </Frame>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-        <Button Text="Adicionar Conta" Clicked="OnAdicionarContaClicked"/>
-    </VerticalStackLayout>
-        </ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+            <Label Text="Minhas Contas" FontSize="26" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+            <!-- Resumo das contas -->
+            <Frame BackgroundColor="#E3F2FD" Padding="16" CornerRadius="12" Margin="0,8">
+                <VerticalStackLayout>
+                    <Label x:Name="ResumoLabel" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label x:Name="TotalLabel" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#1976D2"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <CollectionView x:Name="ContasCollectionView">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="12" Margin="4" CornerRadius="12" BackgroundColor="#F5F5F5">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Nome}" FontSize="18" FontAttributes="Bold"/>
+                                <Label Text="{Binding Valor, StringFormat='Valor: {0:C}'}" FontSize="16"/>
+                                <Label Text="{Binding Vencimento, StringFormat='Vence em: {0:dd/MM/yyyy}'}" FontSize="15"/>
+                                <Label Text="{Binding Status}" FontSize="14" TextColor="{Binding StatusColor}"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Botões de ação -->
+            <Button Text="Adicionar Conta" Clicked="OnAdicionarContaClicked"/>
+            <Button Text="Anexar Arquivo" Clicked="OnAnexarBoletoClicked" BackgroundColor="#2196F3" TextColor="White" FontSize="16" HeightRequest="44" CornerRadius="18"/>
+            <Button Text="Inserir Manualmente" Clicked="OnInserirManualClicked" BackgroundColor="#FF9800" TextColor="White" FontSize="16" HeightRequest="44" CornerRadius="18"/>
+
+            <!-- Botões PDF -->
+            <Button Text="📄 Gerar Relatório PDF" Clicked="OnGerarRelatorioPdfClicked" BackgroundColor="#4CAF50" TextColor="White" FontSize="16" HeightRequest="44" CornerRadius="18"/>
+            <Button Text="📖 Ler PDF" Clicked="OnLerPdfClicked" BackgroundColor="#9C27B0" TextColor="White" FontSize="16" HeightRequest="44" CornerRadius="18"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

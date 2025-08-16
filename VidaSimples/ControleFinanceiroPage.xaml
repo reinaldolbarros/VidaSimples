@@ -6,69 +6,62 @@
     Title="Controle Financeiro">
 
     <ScrollView>
-    <VerticalStackLayout Padding="24" Spacing="16">
-        <Label Text="Controle Financeiro" FontSize="26" FontAttributes="Bold" HorizontalOptions="Center"/>
+        <VerticalStackLayout Padding="24" Spacing="16">
+            <Label Text="Controle Financeiro" FontSize="26" FontAttributes="Bold" HorizontalOptions="Center"/>
 
-        <!-- SALDO ATUAL -->
-        <Frame Padding="12" BackgroundColor="#E3FCEC" CornerRadius="10">
-            <HorizontalStackLayout>
-                <Label Text="Saldo Atual:" FontSize="18" FontAttributes="Bold"/>
-                <Label Text="{Binding SaldoAtual, StringFormat='{0:C}'}" FontSize="18" TextColor="DarkGreen"/>
+            <!-- SALDO ATUAL -->
+            <Frame Padding="12" BackgroundColor="#E3FCEC" CornerRadius="10">
+                <HorizontalStackLayout>
+                    <Label Text="Saldo Atual:" FontSize="18" FontAttributes="Bold"/>
+                    <Label Text="{Binding SaldoAtual, StringFormat='{0:C}'}" FontSize="18" TextColor="DarkGreen"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- RESUMO MENSAL -->
+            <Frame Padding="12" BackgroundColor="#F7F7F7" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Resumo do mês" FontSize="16" FontAttributes="Bold"/>
+                    <Label Text="{Binding TotalEntradas, StringFormat='Entradas: {0:C}'}" TextColor="Green"/>
+                    <Label Text="{Binding TotalSaidas, StringFormat='Saídas: {0:C}'}" TextColor="Red"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- FILTRO DE TIPO -->
+            <Picker ItemsSource="{Binding Tipos}" SelectedItem="{Binding TipoSelecionado}" Title="Filtrar por tipo"/>
+
+            <!-- FILTRO DE CATEGORIA -->
+            <Picker ItemsSource="{Binding Categorias}" SelectedItem="{Binding CategoriaSelecionada}" Title="Filtrar por categoria"/>
+
+            <!-- ADICIONAR NOVA CATEGORIA -->
+            <HorizontalStackLayout Spacing="8">
+                <Entry x:Name="NovaCategoriaEntry" Placeholder="Nova categoria"/>
+                <Button Text="Adicionar Categoria" Clicked="OnAdicionarCategoriaClicked"/>
             </HorizontalStackLayout>
-        </Frame>
 
-        <!-- RESUMO MENSAL -->
-        <Frame Padding="12" BackgroundColor="#F7F7F7" CornerRadius="10">
-            <VerticalStackLayout>
-                <Label Text="Resumo do mês" FontSize="16" FontAttributes="Bold"/>
-                <Label Text="{Binding TotalEntradas, StringFormat='Entradas: {0:C}'}" TextColor="Green"/>
-                <Label Text="{Binding TotalSaidas, StringFormat='Saídas: {0:C}'}" TextColor="Red"/>
-            </VerticalStackLayout>
-        </Frame>
+            <!-- FILTRO DE DATA (mês) -->
+            <DatePicker Date="{Binding DataSelecionada}" Format="MM/yyyy"/>
 
-        <!-- FILTRO DE TIPO -->
-        <Picker ItemsSource="{Binding Tipos}" SelectedItem="{Binding TipoSelecionado}" Title="Filtrar por tipo"/>
+            <!-- LISTA DE LANÇAMENTOS -->
+            <CollectionView ItemsSource="{Binding LancamentosFiltrados}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="12" Margin="4" CornerRadius="12" BackgroundColor="#F5F5F5">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Tipo}" FontSize="18" FontAttributes="Bold"/>
+                                <Label Text="{Binding Valor, StringFormat='Valor: {0:C}'}" FontSize="16"/>
+                                <Label Text="{Binding Categoria}" FontSize="15" TextColor="SlateBlue"/>
+                                <Label Text="{Binding Descricao}" FontSize="15"/>
+                                <Label Text="{Binding Observacao}" FontSize="13" TextColor="Gray"/>
+                                <Label Text="{Binding Data, StringFormat='Data: {0:dd/MM/yyyy HH:mm}'}" FontSize="14"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
-        <!-- FILTRO DE DATA (mês) -->
-        <DatePicker Date="{Binding DataSelecionada}" Format="MM/yyyy"/>
-
-        <!-- LISTA DE LANÇAMENTOS -->
-        <CollectionView ItemsSource="{Binding LancamentosFiltrados}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Frame Padding="12" Margin="4" CornerRadius="12" BackgroundColor="#F5F5F5">
-                        <VerticalStackLayout>
-                            <Label Text="{Binding Tipo}" FontSize="18" FontAttributes="Bold"/>
-                            <Label Text="{Binding Valor, StringFormat='Valor: {0:C}'}" FontSize="16"/>
-                            <Label Text="{Binding Categoria}" FontSize="15" TextColor="SlateBlue"/>
-                            <Label Text="{Binding Descricao}" FontSize="15"/>
-                            <Label Text="{Binding Observacao}" FontSize="13" TextColor="Gray"/>
-                            <Label Text="{Binding Data, StringFormat='Data: {0:dd/MM/yyyy HH:mm}'}" FontSize="14"/>
-                        </VerticalStackLayout>
-                    </Frame>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-
-        <Button Text="Adicionar Lançamento" Clicked="OnAdicionarLancamentoClicked"/>
-       
-
-        <Button Text="Anexar Arquivo"
-            Clicked="OnAnexarBoletoClicked"
-            BackgroundColor="#2196F3"
-            TextColor="White"
-            FontSize="16"
-            HeightRequest="44"
-            CornerRadius="18"/>
-
-        <Button Text="Inserir Manualmente"
-            Clicked="OnInserirManualClicked"
-            BackgroundColor="#FF9800"
-            TextColor="White"
-            FontSize="16"
-            HeightRequest="44"
-            CornerRadius="18"/>
-        <Button Text="Exportar Dados" Clicked="OnExportarDadosClicked"/>
-    </VerticalStackLayout>
-        </ScrollView>
+            <Button Text="Adicionar Lançamento" Clicked="OnAdicionarLancamentoClicked"/>
+            <Button Text="Exportar Dados" Clicked="OnExportarDadosClicked"/>
+            <Button Text="Visualizar Gráfico de Pizza" Clicked="OnVisualizarGraficoClicked" BackgroundColor="#8BC34A" TextColor="White" FontSize="16" HeightRequest="44" CornerRadius="18"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

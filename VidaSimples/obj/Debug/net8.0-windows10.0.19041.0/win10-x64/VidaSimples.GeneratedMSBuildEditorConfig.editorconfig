@@ -73,6 +73,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.Dashboard.xaml
 build_metadata.AdditionalFiles.TargetPath = Dashboard.xaml
 build_metadata.AdditionalFiles.RelativePath = Dashboard.xaml
 
+[C:/TI/VidaSimples/VidaSimples/VidaSimples/GraficoPizzaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.GraficoPizzaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = GraficoPizzaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = GraficoPizzaPage.xaml
+
 [C:/TI/VidaSimples/VidaSimples/VidaSimples/InserirManualPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VidaSimples.InserirManualPage.xaml

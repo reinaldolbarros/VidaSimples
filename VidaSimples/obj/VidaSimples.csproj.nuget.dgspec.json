@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\VidaSimples.csproj": {}
+    "C:\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\VidaSimples.csproj": {}
   },
   "projects": {
-    "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\VidaSimples.csproj": {
+    "C:\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\VidaSimples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\VidaSimples.csproj",
+        "projectUniqueName": "C:\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\VidaSimples.csproj",
         "projectName": "VidaSimples",
-        "projectPath": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\VidaSimples.csproj",
+        "projectPath": "C:\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\VidaSimples.csproj",
         "packagesPath": "C:\\Users\\reina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\reina\\OneDrive\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\obj\\",
+        "outputPath": "C:\\TI\\VidaSimples\\VidaSimples\\VidaSimples\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -66,13 +66,17 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "dependencies": {
+            "Microcharts.Maui": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
@@ -83,6 +87,14 @@
               "target": "Package",
               "version": "[8.0.10, )",
               "autoReferenced": true
+            },
+            "Syncfusion.Maui.Charts": {
+              "target": "Package",
+              "version": "[30.2.5, )"
+            },
+            "Syncfusion.Pdf.Net.Core": {
+              "target": "Package",
+              "version": "[30.2.5, )"
             },
             "ZXing.Net.Maui": {
               "target": "Package",
@@ -113,13 +125,17 @@
         "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
+            "Microcharts.Maui": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
@@ -130,6 +146,14 @@
               "target": "Package",
               "version": "[8.0.10, )",
               "autoReferenced": true
+            },
+            "Syncfusion.Maui.Charts": {
+              "target": "Package",
+              "version": "[30.2.5, )"
+            },
+            "Syncfusion.Pdf.Net.Core": {
+              "target": "Package",
+              "version": "[30.2.5, )"
             },
             "ZXing.Net.Maui": {
               "target": "Package",
@@ -160,13 +184,17 @@
         "net8.0-maccatalyst18.0": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
+            "Microcharts.Maui": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
@@ -177,6 +205,14 @@
               "target": "Package",
               "version": "[8.0.10, )",
               "autoReferenced": true
+            },
+            "Syncfusion.Maui.Charts": {
+              "target": "Package",
+              "version": "[30.2.5, )"
+            },
+            "Syncfusion.Pdf.Net.Core": {
+              "target": "Package",
+              "version": "[30.2.5, )"
             },
             "ZXing.Net.Maui": {
               "target": "Package",
@@ -208,17 +244,29 @@
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "dependencies": {
+            "Microcharts.Maui": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.82, )"
+            },
+            "Syncfusion.Maui.Charts": {
+              "target": "Package",
+              "version": "[30.2.5, )"
+            },
+            "Syncfusion.Pdf.Net.Core": {
+              "target": "Package",
+              "version": "[30.2.5, )"
             },
             "ZXing.Net.Maui": {
               "target": "Package",

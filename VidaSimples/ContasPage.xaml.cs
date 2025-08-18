@@ -11,11 +11,15 @@ using Syncfusion.Pdf.Parsing;
 using SyncfusionDrawing = Syncfusion.Drawing;
 using MauiColor = Microsoft.Maui.Graphics.Color;
 using MauiColors = Microsoft.Maui.Graphics.Colors;
+using System.Text.RegularExpressions;
+using Microsoft.Maui.Storage;
 
 namespace VidaSimples
 {
     public partial class ContasPage : ContentPage
     {
+
+        public FileResult ArquivoSelecionado { get; set; }
         public ObservableCollection<Conta> Contas { get; set; }
 
         public ContasPage()
@@ -61,7 +65,7 @@ namespace VidaSimples
 
         private async void OnAnexarBoletoClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AnexarBoletoPage());
+            await Navigation.PushAsync(new AnexarBoletoPage(Contas));
         }
 
         private async void OnInserirManualClicked(object sender, EventArgs e)
@@ -148,7 +152,7 @@ namespace VidaSimples
                 var padraoData = new System.Text.RegularExpressions.Regex(@"(\d{2}[/.-]\d{2}[/.-]\d{4})");
 
                 var linhas = texto.Split('\n');
-
+                string beneficiario = ExtrairBeneficiario(texto);
                 foreach (string linha in linhas)
                 {
                     var matchValor = padraoValor.Match(linha);
@@ -164,7 +168,8 @@ namespace VidaSimples
                                 LinhaOriginal = linha.Trim(),
                                 Valor = valor,
                                 DataEncontrada = matchData.Success ? matchData.Groups[1].Value : "",
-                                PossivelDescricao = ExtrairDescricaoLinha(linha, matchValor.Index)
+                                PossivelDescricao = ExtrairDescricaoLinha(linha, matchValor.Index),
+                                Beneficiario = beneficiario
                             };
 
                             contasEncontradas.Add(conta);
@@ -196,7 +201,15 @@ namespace VidaSimples
                 return "Descrição não identificada";
             }
         }
-
+        private string ExtrairBeneficiario(string texto)
+        {
+            // Procura "Beneficiário: Nome" ou "Cedente: Nome"
+            var padrao = new System.Text.RegularExpressions.Regex(@"(Benefici[aá]rio|Cedente)\s*[:\-]?\s*(.+)", RegexOptions.IgnoreCase);
+            var match = padrao.Match(texto);
+            if (match.Success)
+                return match.Groups[2].Value.Trim();
+            return "";
+        }
         private async Task MostrarResultadoLeituraPdf(int numeroPaginas, string textoCompleto, List<ContaPdf> contasEncontradas)
         {
             // Preparar resumo
@@ -280,7 +293,8 @@ namespace VidaSimples
                         Nome = contaPdf.PossivelDescricao,
                         Valor = contaPdf.Valor,
                         Vencimento = vencimento,
-                        Status = vencimento < DateTime.Today ? "Vencido" : "Pendente"
+                        Status = vencimento < DateTime.Today ? "Vencido" : "Pendente",
+                        
                     };
 
                     Contas.Add(novaConta);
@@ -478,10 +492,40 @@ namespace VidaSimples
                 return null;
             }
         }
+        private async void OnExtrairDadosClicked(object sender, EventArgs e)
+        {
+            if (ArquivoSelecionado != null)
+            {
+                // Chame aqui o método que lê e extrai dados do PDF/imagem
+                await LerConteudoPdfAsync(ArquivoSelecionado);
+                // Depois, atualize a lista de contas ou mostre os dados extraídos
+            }
+            else
+            {
+                await DisplayAlert("Atenção", "Selecione um arquivo primeiro.", "OK");
+            }
+        }
+        public static string ClassificarTipoConta(string texto)
+        {
+            texto = texto.ToLowerInvariant();
+            if (texto.Contains("energia") || texto.Contains("energisa") || texto.Contains("eletricidade") || texto.Contains("luz"))
+                return "Energia";
+            if (texto.Contains("água") || texto.Contains("saneamento") || texto.Contains("brk") || texto.Contains("sabesp"))
+                return "Água";
+            if (texto.Contains("telefone") || texto.Contains("vivo") || texto.Contains("tim") || texto.Contains("claro"))
+                return "Telefone";
+            if (texto.Contains("internet") || texto.Contains("net") || texto.Contains("oi fibra") || texto.Contains("fibra"))
+                return "Internet";
+            if (texto.Contains("cartão"))
+                return "Cartão de Crédito";
+            // Adicione outros tipos conforme necessário
+            return "Outros";
+        }
     }
 
     public class Conta
     {
+        public string Tipo { get; set; }
         public string Nome { get; set; }
         public double Valor { get; set; }
         public DateTime Vencimento { get; set; }
@@ -504,6 +548,6 @@ namespace VidaSimples
         public string PossivelDescricao { get; set; }
         public double Valor { get; set; }
         public string DataEncontrada { get; set; }
-
+        public string Beneficiario { get; set; }
     }
 }

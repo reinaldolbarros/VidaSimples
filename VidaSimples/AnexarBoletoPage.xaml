@@ -8,6 +8,7 @@
     <VerticalStackLayout Padding="24" Spacing="16">
         <Label Text="Selecione o arquivo do boleto (imagem ou PDF)" FontSize="18"/>
         <Button Text="Escolher Arquivo" Clicked="OnEscolherArquivoClicked" BackgroundColor="#2196F3" TextColor="White"/>
+        <Button Text="Extrair Dados do Boleto" Clicked="OnExtrairDadosClicked" IsEnabled="{Binding ArquivoSelecionadoExiste}"/>
         <Label x:Name="lblStatus" Text="" FontSize="16" TextColor="Gray"/>
     </VerticalStackLayout>
 </ContentPage>
